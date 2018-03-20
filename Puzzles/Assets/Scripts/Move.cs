@@ -12,7 +12,7 @@ public class Move : MonoBehaviour
     private Rigidbody2D myrigidbody;
     private Vector2 Direction;
     public LevelManager levelManager;
-   // private Animator animator;
+  private Animator animator;
 [SerializeField]
     private Sprite[] RotationSprite;
 

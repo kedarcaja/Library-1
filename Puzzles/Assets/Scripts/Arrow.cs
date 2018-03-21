@@ -11,12 +11,15 @@ public class Arrow : MonoBehaviour
     private GameObject arrow;
     private Vector2 velocVect;
     [SerializeField]
-    private float vel;
+    private float velY;
+    [SerializeField]
+    private float velX;
+    [HideInInspector]
   public GameObject clone;
 
     private void Start()
     {
-        velocVect = new Vector2(0,-vel);
+        velocVect = new Vector2(velX,-velY);
    
     }
     private void FixedUpdate()

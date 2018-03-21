@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class Move : MonoBehaviour
 {
 
@@ -12,6 +12,8 @@ public class Move : MonoBehaviour
     private Rigidbody2D myrigidbody;
     private Vector2 Direction;
     public LevelManager levelManager;
+    private int health;
+    private Vector2 StartPosition;
   
 [SerializeField]
     private Sprite[] RotationSprite;
@@ -29,7 +31,9 @@ public class Move : MonoBehaviour
 
         Speed = 200;
         setSprite(0);
-      
+        health = 5;
+        StartPosition = this.transform.position;
+       
     }
 
 
@@ -37,6 +41,12 @@ public class Move : MonoBehaviour
     void Update()
     {
         GetInput();
+        if(health == 0)
+        {
+
+            levelManager.LoadGameLevel("Lost");
+
+        }
 
     }
     private void FixedUpdate()
@@ -99,7 +109,7 @@ public class Move : MonoBehaviour
         myrigidbody.velocity = (Direction.normalized * Speed);
 
     }
- 
+    
 
     private void setSprite(int index) {
 
@@ -108,6 +118,21 @@ public class Move : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().sprite = RotationSprite[index];
 
     }
-#endregion
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "arrow")
+        {
+
+            transform.position = StartPosition;
+
+            health--;
+            Debug.Log("u have: "+health.ToString());
+
+           
+        }
+    }
+    #endregion
 }
 

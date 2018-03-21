@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212737095621729286}
   - component: {fileID: 50173451704413140}
   - component: {fileID: 60717127630837960}
-  - component: {fileID: 114121709806886410}
+  - component: {fileID: 114105072878002094}
   m_Layer: 0
   m_Name: arrow (5)
   m_TagString: arrow
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1264390820994294}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -5.4, y: 511.8, z: 0}
-  m_LocalScale: {x: 0.41025978, y: 0.82051957, z: 0.41025978}
+  m_LocalPosition: {x: 27.505127, y: 452.13812, z: 0}
+  m_LocalScale: {x: 0.41026026, y: 0.8205205, z: 0.41025978}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -210,7 +210,7 @@ PolygonCollider2D:
       - {x: 32.56667, y: -3.8333335}
       - {x: 33.966667, y: -3.3666668}
       - {x: 34.9, y: -3.1666667}
---- !u!114 &114121709806886410
+--- !u!114 &114105072878002094
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -218,9 +218,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1264390820994294}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05d8cf72063bd8d4c9f10965cbf28207, type: 3}
+  m_Script: {fileID: 11500000, guid: 8afc380143e16fa40a1ec33b05645952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrow: {fileID: 0}
 --- !u!212 &212737095621729286
 SpriteRenderer:
   m_ObjectHideFlags: 1

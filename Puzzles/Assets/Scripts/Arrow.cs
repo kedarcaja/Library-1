@@ -7,69 +7,39 @@ public class Arrow : MonoBehaviour
 
 
 
+    [SerializeField]
+    private GameObject arrow;
+    private Vector2 velocVect;
+    [SerializeField]
+    private float vel;
+  public GameObject clone;
 
-
-
-    public float vel;
-    private Vector2 veloc;
-    public GameObject arrows;
-
-    GameObject projectile;
-
-
-    void Start()
+    private void Start()
     {
-        projectile = Instantiate(arrows, arrows.transform.position, arrows.transform.rotation) as GameObject;
-       
-
-
-       
-
-
-
-
-        veloc = (new Vector2(0, -vel));
-
+        velocVect = new Vector2(0,-vel);
+   
     }
-
-
-
     private void FixedUpdate()
     {
-      
-
-        {
 
 
-            if (projectile != null)
-            {
+        if (clone != null)
+            clone.GetComponent<Rigidbody2D>().velocity = velocVect;
 
+        else
+            getClone();
 
-
-                projectile.GetComponent<Rigidbody2D>().velocity = veloc;
-
-            }
-
-
-
-            else
-            {
-                projectile = Instantiate(arrows, arrows.transform.position, arrows.transform.rotation) as GameObject;
-
-
-             
-
-
-
-                }
-            }
         }
-        }
-
-
- 
+    
 
 
 
-   
+    private void getClone()
+    {
+
+
+        clone = Instantiate(arrow, arrow.transform.position, arrow.transform.rotation);
+
+    }
+    }
 

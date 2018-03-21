@@ -12,7 +12,7 @@ public class Move : MonoBehaviour
     private Rigidbody2D myrigidbody;
     private Vector2 Direction;
     public LevelManager levelManager;
-  private Animator animator;
+  
 [SerializeField]
     private Sprite[] RotationSprite;
 
@@ -24,7 +24,7 @@ public class Move : MonoBehaviour
     void Start()
     {
 
-        animator = gameObject.GetComponent<Animator>();
+
         myrigidbody = GetComponent<Rigidbody2D>();
 
         Speed = 200;
@@ -63,7 +63,7 @@ public class Move : MonoBehaviour
             Direction += Vector2.right;
 
             setSprite(1);
-          //  Running();
+      
         }
 
         if (Input.GetKey(KeyCode.S))
@@ -84,7 +84,7 @@ public class Move : MonoBehaviour
         {
             Direction += Vector2.left;
             setSprite(2);
-           // Running();
+   
 
         }
 
@@ -99,16 +99,7 @@ public class Move : MonoBehaviour
         myrigidbody.velocity = (Direction.normalized * Speed);
 
     }
-    private void Running()
-    {
-
-
-
-
-      //  animator.SetBool("isRunning",true);
-        
-    }
-
+ 
 
     private void setSprite(int index) {
 

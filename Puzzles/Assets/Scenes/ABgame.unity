@@ -450,84 +450,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -4.25, y: -19.125}
-      - {x: -2.875, y: -18.875}
-      - {x: -2, y: -18.375}
-      - {x: -2.5, y: -21.375}
-      - {x: -2.5, y: -22.625}
-      - {x: -1.875, y: -23}
-      - {x: 3.625, y: -23}
-      - {x: 4.25, y: -22.5}
-      - {x: 4.375, y: -21.75}
-      - {x: 3, y: -19.5}
-      - {x: 3.625, y: -19.125}
-      - {x: 4.625, y: -15.75}
-      - {x: 6.375, y: -13.5}
-      - {x: 7.25, y: -10.5}
-      - {x: 7, y: -8.875}
-      - {x: 6.625, y: -7.375}
-      - {x: 7.875, y: -6}
-      - {x: 8.625, y: -4.625}
-      - {x: 9.375, y: -0.125}
-      - {x: 8.875, y: 0.75}
-      - {x: 10, y: 3.625}
-      - {x: 10.5, y: 5.125}
-      - {x: 11.875, y: 6.375}
-      - {x: 12.375, y: 7.125}
-      - {x: 12.625, y: 8.625}
-      - {x: 12.625, y: 13.625}
-      - {x: 12.125, y: 15.25}
-      - {x: 11.25, y: 15.75}
-      - {x: 10.25, y: 15.5}
-      - {x: 9.375, y: 14.75}
-      - {x: 6.125, y: 14.625}
-      - {x: 7, y: 22}
-      - {x: 6.5, y: 22.625}
-      - {x: 3.75, y: 23.125}
-      - {x: 0.125, y: 23.125}
-      - {x: -2, y: 22.875}
-      - {x: -4.25, y: 22}
-      - {x: -6.5, y: 20.375}
-      - {x: -7.75, y: 19}
-      - {x: -9, y: 17.375}
-      - {x: -10, y: 15.25}
-      - {x: -10, y: 14.25}
-      - {x: -11.25, y: 12.75}
-      - {x: -12.5, y: 10.5}
-      - {x: -13, y: 8.625}
-      - {x: -13.25, y: 7.375}
-      - {x: -14, y: 1.375}
-      - {x: -14.25, y: -0.5}
-      - {x: -14.25, y: -2.5}
-      - {x: -14.125, y: -2.75}
-      - {x: -13.125, y: -3.625}
-      - {x: -12.375, y: -4.25}
-      - {x: -10.125, y: -5.25}
-      - {x: -11.875, y: -7.125}
-      - {x: -12.625, y: -9.5}
-      - {x: -13.625, y: -10.5}
-      - {x: -13.125, y: -13.375}
-      - {x: -13.125, y: -15.125}
-      - {x: -13, y: -15.5}
-      - {x: -13.25, y: -17.25}
-      - {x: -12.375, y: -18.125}
-      - {x: -10.625, y: -19}
-      - {x: -12, y: -21.125}
-      - {x: -12.25, y: -22.375}
-      - {x: -11.625, y: -23.125}
-      - {x: -5.875, y: -23.125}
-      - {x: -5.125, y: -22.75}
-      - {x: -5.5, y: -20.625}
-      - {x: -5.25, y: -19.25}
-    - - {x: 1, y: -14.625}
-      - {x: 1.5, y: -13.875}
-      - {x: 2.375, y: -13.375}
-      - {x: 1.875, y: -15.75}
-      - {x: 2, y: -15.75}
-    - - {x: 3.375, y: -7.25}
-      - {x: 3.625, y: -7.75}
-      - {x: 1.625, y: -8.125}
-      - {x: 0.375, y: -8.375}
+    - - {x: -21, y: 40}
+      - {x: -29, y: 26}
+      - {x: -29, y: -12}
+      - {x: -19, y: -28}
+      - {x: 7, y: -28}
+      - {x: 19, y: -20}
+      - {x: 19, y: 30}
+      - {x: 17, y: 40}
 --- !u!212 &176046612
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -581,7 +511,7 @@ Transform:
   m_PrefabInternal: {fileID: 699162717}
   m_GameObject: {fileID: 176046608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.07, y: 101.44, z: 0}
+  m_LocalPosition: {x: 27.9, y: 187.8, z: 0}
   m_LocalScale: {x: 0.7965159, y: 0.7965159, z: 0.7965159}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1874,11 +1804,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4947312711416490, guid: 6f6fb9840eb3698458a07c04dd724fc7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.07
+      value: 27.9
       objectReference: {fileID: 0}
     - target: {fileID: 4947312711416490, guid: 6f6fb9840eb3698458a07c04dd724fc7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 101.44
+      value: 187.8
       objectReference: {fileID: 0}
     - target: {fileID: 4947312711416490, guid: 6f6fb9840eb3698458a07c04dd724fc7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2728,7 +2658,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4189471774676336, guid: 61eaee087b12b164586d2b4884caeaf8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -12.56
+      value: -13.02
       objectReference: {fileID: 0}
     - target: {fileID: 4189471774676336, guid: 61eaee087b12b164586d2b4884caeaf8, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2773,7 +2703,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4189471774676336, guid: 61eaee087b12b164586d2b4884caeaf8, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.4242875
+      value: 0.43545115
       objectReference: {fileID: 0}
     - target: {fileID: 4189471774676336, guid: 61eaee087b12b164586d2b4884caeaf8, type: 2}
       propertyPath: m_LocalScale.y
@@ -3537,9 +3467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023b413976040724daebc89075ce7679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTime: 10
   vel: 200
-  arrow: {fileID: 1183482174688058, guid: 1646d15df9d6d9142825ba5097939f68, type: 2}
+  arrows: {fileID: 1264390820994294, guid: ca66711f33f602547aa8c0ef1cefd1ce, type: 2}
 --- !u!4 &1269864580
 Transform:
   m_ObjectHideFlags: 0
